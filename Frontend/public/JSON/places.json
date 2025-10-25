@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Lonavala",
+    "image": "lonavalaimg",
+    "tags": "UnderRated",
+    "description": "A beautiful hill station near Mumbai, known for its greenery.",
+    "attributes": ["zomato", "swiggy", "uber", "ola"],
+    "congestion": "Medium"
+  },
+  {
+    "id": 2,
+    "name": "Mahabaleshwar",
+    "tags": "Popular",
+    "image": "lonavalaimg",
+    "description": "A scenic hill station with strawberry farms and viewpoints.",
+    "attributes": ["swiggy", "uber", "ola"],
+    "congestion": "Low"
+  },
+  {
+    "id": 3,
+    "name": "Panchgani",
+    "tags": "UnderRated",
+    "image": "lonavalaimg",
+    "description": "Known for its table land and pleasant weather.",
+    "attributes": ["zomato", "swiggy", "ola"],
+    "congestion": "High"
+  },
+  {
+    "id": 4,
+    "name": "Panchgani",
+    "tags": "UnderRated",
+    "image": "lonavalaimg",
+    "description": "Known for its table land and pleasant weather.",
+    "attributes": ["zomato", "swiggy", "ola"],
+    "congestion": "High"
+  },
+  {
+    "id": 5,
+    "name": "Panchgani",
+    "tags": "UnderRated",
+    "image": "lonavalaimg",
+    "description": "Known for its table land and pleasant weather.",
+    "attributes": ["zomato", "swiggy", "ola"],
+    "congestion": "High"
+  }
+]
