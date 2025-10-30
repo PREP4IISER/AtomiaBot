@@ -383,28 +383,62 @@ const styles = {
     fontFamily: 'var(--font-primary)',
     color: 'var(--color-text)'
   },
-  sendButton: {
-    padding: 'var(--space-md) var(--space-2xl)',
-    background: 'var(--gradient-primary)',
-    color: 'var(--color-accent)',
-    border: 'none',
-    borderRadius: '16px',
-    fontSize: '15px',
-    fontWeight: '600',
-    cursor: 'pointer',
-    transition: 'all var(--transition-speed)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    minWidth: '140px',
-    boxShadow: 'var(--shadow-button)',
-    fontFamily: 'var(--font-primary)'
-  },
   loadingText: {
     display: 'flex',
     alignItems: 'center',
     gap: 'var(--space-xs)'
   },
+  sendButton: {
+  padding: 'var(--space-sm) var(--space-xl)',
+  background: 'linear-gradient(135deg, #FFD54F 0%, #FFC107 100%)', // warm golden yellow
+  color: '#111', // dark text for contrast
+  border: '2px solid rgba(255, 255, 255, 0.2)',
+  borderRadius: '9999px',
+  fontSize: '15px',
+  fontWeight: '600',
+  cursor: 'pointer',
+  transition: 'all 0.25s ease',
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  minWidth: '140px',
+  boxShadow: '0 6px 16px rgba(255, 193, 7, 0.35)',
+  fontFamily: 'var(--font-primary)',
+  letterSpacing: '0.3px',
+  textTransform: 'uppercase',
+  position: 'relative',
+  overflow: 'hidden',
+
+  /* Hover Effects */
+  '&:hover': {
+    transform: 'translateY(-2px) scale(1.03)',
+    boxShadow: '0 8px 20px rgba(255, 193, 7, 0.5)',
+  },
+
+  /* Active (click) state */
+  '&:active': {
+    transform: 'scale(0.97)',
+    boxShadow: '0 4px 10px rgba(255, 193, 7, 0.3)',
+  },
+
+  /* Optional glowing ring animation */
+  '&::after': {
+    content: '""',
+    position: 'absolute',
+    inset: 0,
+    borderRadius: '9999px',
+    padding: '2px',
+    background: 'linear-gradient(135deg, #FFF59D, #FFCA28)',
+    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+    WebkitMaskComposite: 'xor',
+    maskComposite: 'exclude',
+    opacity: 0,
+    transition: 'opacity 0.3s ease',
+  },
+  '&:hover::after': {
+    opacity: 1,
+  },
+},
   spinner: {
     display: 'inline-block',
     animation: 'spin 1s linear infinite'
